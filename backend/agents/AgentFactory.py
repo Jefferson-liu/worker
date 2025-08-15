@@ -1,7 +1,7 @@
 #This agent will create other agents and determine their roles based on the user's request.
 from typing import List
 from models.agent import Agent
-from openai_api.prompt import PromptAPI
+from models.prompt import PromptAPI
 class AgentFactory(Agent):
     name: str = "AgentFactory"
     description: str = "This agent creates other agents and determines their roles based on the user's request."

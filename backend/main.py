@@ -1,8 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from models.message import Message
-#from agents.Manager import Manager
-from openai_api.chat import get_gpt_response
+from api.openai_api.chat import get_gpt_response
 from typing import List
 import time
 

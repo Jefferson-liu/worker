@@ -1,7 +1,7 @@
 #This agent will manage the overall functionality of the system, coordinating between different agents and handling requests.
 from typing import List
 from models.agent import Agent
-from openai_api.prompt import PromptAPI
+from backend.models.prompt import PromptAPI
 class Manager(Agent):
     name: str = "Manager"
     description: str = "This agent recieves a list of agents and decides the best suited one based on their descriptions."

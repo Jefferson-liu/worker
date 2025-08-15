@@ -1,6 +1,6 @@
 from typing import List
 from models.agent import Agent
-from openai_api.prompt import PromptAPI
+from backend.models.prompt import PromptAPI
 class RequirementsGenerator(Agent):
     name: str = "RequirementsGenerator"
     description: str = "This agent recieves user messages and generates a list of technical requirements based on the input."
